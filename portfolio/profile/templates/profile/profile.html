@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Profile</p>
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name }}
+    <br>
+    {{ form.address.label }} {{ form.address }}
+    <br>
+    {{ form.email.label }} {{ form.email }}
+    <br>
+    {{ form.phone.label }} {{ form.phone }}
+    <br>
+    {{ form.about_me.label }} {{ form.about_me }}
+    <br>
+    {{ form.dob.label }} {{ form.dob }}
+    <br>
+    {{ form.submit() }}
+    <br>
+</form>
+{% endblock %}
