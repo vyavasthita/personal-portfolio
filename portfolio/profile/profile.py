@@ -12,7 +12,7 @@ def info():
 @profile_blueprint.route('/create')
 def create_profile():
     form = ProfileForm()
-    
+
     if form.validate_on_submit():
         name = form.name.data
         address = form.address.data

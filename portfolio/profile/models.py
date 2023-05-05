@@ -9,4 +9,3 @@ class Profile(db.Model):
     phone = db.Column(db.Text, unique=True)
     about_me = db.Column(db.Text)
     dob = db.Column(db.DateTime)
-    
