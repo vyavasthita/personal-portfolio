@@ -14,7 +14,6 @@ def register():
         username = form.username.data
         email = form.username.data
         password = form.username.data
-        password_repeat = form.username.data
 
         user_dao.create_user(username=username, email=email, password=password)
         return redirect(url_for('user.register_info'))
